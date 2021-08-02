@@ -1,21 +1,16 @@
-import math
-from PIL import Image
-
-import App.Model.Model as model
-import App.Controller.Controller as controller
-import App.View.View as view
+import App.Controller.Controller as Controller
+import App.Model.Model as Model
 
 import sys
-from PIL import Image
+
 
 path = 'Files/intxt.txt'
 
-
 def main():
-    if model.FindFile(path):
-        controller.EncodeTxtToImg(path)
-        if model.FindFile(model.GetFolderOfFile(path) + model.GetFileName(path) + "_Ncoded.png"):
-            controller.DecodeImgToTxt(model.GetFolderOfFile(path) + model.GetFileName(path) + "_Ncoded.png")
+    if Model.FindFile(path):
+        Controller.EncodeTxtToImg(path)
+        if Model.FindFile(Model.GetFolderOfFile(path) + Model.GetFileName(path) + "_Ncoded.png"):
+            Controller.DecodeImgToTxt(Model.GetFolderOfFile(path) + Model.GetFileName(path) + "_Ncoded.png")
     else:
         exit(0)
 
@@ -23,6 +18,5 @@ def main():
 if __name__ == '__main__':
     main()
 
-
-#TODO
-# - Utiliser des valeur Unicode unitile pour marquer début et fin de fichier text
+# TODO
+# - Utiliser des valeur Unicode inutile pour marquer début et fin de fichier text
