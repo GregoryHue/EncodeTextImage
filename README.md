@@ -19,6 +19,6 @@ With the proper configuration, this script will read the `Files\intxt.txt` and t
 
 # TODO
 
-* Make it usable with command line
+* Make it executable with command line
 * Add parameters
 * Add interface
