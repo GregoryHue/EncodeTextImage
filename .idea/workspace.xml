@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca8cdb2a-c2bc-40d1-b4fe-58468caf90de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EncodeTextImage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EncodeTextImage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controller/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controller/Controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Main/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/Main/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Model/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/View/View.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/View/View.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/intxt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Files/intxt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/intxt_Ncoded.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/intxt_Ncoded_Dcoded.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +20,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="NEW_TOOLWINDOW_STRIPE_DEFAULTS" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />

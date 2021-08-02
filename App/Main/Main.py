@@ -1,9 +1,6 @@
 import App.Controller.Controller as Controller
 import App.Model.Model as Model
 
-import sys
-
-
 path = 'Files/intxt.txt'
 
 def main():
