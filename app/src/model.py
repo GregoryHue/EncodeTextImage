@@ -1,4 +1,4 @@
-import App.View.View as View
+import view
 
 from PIL import Image
 from pathlib import Path
@@ -17,7 +17,7 @@ def GetFileName(path):
 
 
 def GetFolderOfFile(path):
-    return str(Path(path).parent) + "\\"
+    return str(Path(path).parent) + "/"
 
 
 def GetAbsoFolderOfFile(path):
@@ -27,35 +27,35 @@ def GetAbsoFolderOfFile(path):
 def FileIsTxt(path):
     file = Path(path)
     if file.suffix == '.txt':
-        View.CheckingType(file)
+        view.CheckingType(file)
         return True
     else:
-        View.Error(2)
-        View.CheckingType(file)
+        view.Error(2)
+        view.CheckingType(file)
         return False
 
 
 def FileIsPng(path):
     file = Path(path)
     if file.suffix == '.png':
-        View.CheckingType(file.suffix)
+        view.CheckingType(file.suffix)
         return True
     else:
-        View.Error(2)
-        View.CheckingType(file.suffix)
+        view.Error(2)
+        view.CheckingType(file.suffix)
         return False
 
 
 def FindFile(path):
-    View.CheckingFile(path)
+    view.CheckingFile(path)
 
     file = Path(path)
     if file.is_file():
         abso_path = str(file.resolve())
-        View.FileFound(abso_path)
+        view.FileFound(abso_path)
         return True
     else:
-        View.Error(1)
+        view.Error(1)
         return False
 
 

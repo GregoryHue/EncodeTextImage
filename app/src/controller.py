@@ -1,8 +1,8 @@
 import math
+import model
+import view
 
 from PIL import Image
-from App.Model import Model as Model
-from App.View import View as View
 
 
 def EncodeTxtToImg(path):
@@ -10,15 +10,18 @@ def EncodeTxtToImg(path):
 
     txt = open(path, mode='r', encoding="utf-8")
 
+    view.TryingToEncode(path)
+
     while True:
         char = txt.read(1)
         if char:
             if ord(char) <= 255:
                 data.append(ord(char))
             else:
-                View.ValueTooHIgh(ord(char))
+                view.ValueTooHIgh(ord(char))
         else:
-            View.EndOfFile("txt")
+            view.EndOfFile("txt")
+            view.Success(path)
             break
     txt.close()
 
@@ -49,13 +52,17 @@ def EncodeTxtToImg(path):
             else:
                 pass
 
-    return img.save(Model.GetFolderOfFile(path) + Model.GetFileName(path) + "_Ncoded.png")
+    return img.save(model.GetFolderOfFile(path) + model.GetFileName(path) + "_Ncoded.png")
 
 
 def DecodeImgToTxt(path):
     data = []
     img = Image.open(path)
+
+    view.TryingToDecode(path)
+
     img.convert('RGBA')
+    
 
     for j in range(img.size[0]):
         for i in range(img.size[1]):
@@ -69,9 +76,10 @@ def DecodeImgToTxt(path):
             if a != 255:
                 data.append(a)
 
-    View.EndOfFile("png")
+    view.EndOfFile("png")
+    view.Success(path)
 
-    txt = open(Model.GetFolderOfFile(path) + Model.GetFileName(path) + "_Dcoded.txt", mode="w+", encoding="utf-8")
+    txt = open(model.GetFolderOfFile(path) + model.GetFileName(path) + "_Dcoded.txt", mode="w+", encoding="utf-8")
 
     for i in data:
         txt.write(chr(i))
